@@ -12,7 +12,7 @@ export default function About() {
          <p>
             <span style={{color: info.baseColor}}>
                {firstName}{info.lastName.toLowerCase()} $
-            </span> cd about me someone makes you connect with the world
+            </span> cd {firstName} someone makes you connect with the world
          </p>
          <p>
             <span style={{color: info.baseColor}}>about {firstName} 
