@@ -101,8 +101,8 @@ export const info = {
       },
       {
          title: "Photographer Website",
-         live: "https://github.com/Miaoday/p9_Nina_Carducci",
-         source: "https://miaoday.github.io/p9_Nina_Carducci/",
+         live: "https://miaoday.github.io/p9_Nina_Carducci/",
+         source: "https://github.com/Miaoday/p9_Nina_Carducci",
          image: mock4
       },
       {
