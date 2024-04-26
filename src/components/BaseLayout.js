@@ -11,24 +11,25 @@ export default function BaseLayout() {
    let [darkMode, setDarkMode] = useState(false);
 
    function handleToggleDarkMode() {
-      let oppositeOfCurrentDarkMode = !darkMode
-      console.log(oppositeOfCurrentDarkMode)
-      localStorage.setItem('darkMode', `${oppositeOfCurrentDarkMode}`)
-      setDarkMode(oppositeOfCurrentDarkMode)
+      setDarkMode(!darkMode);
+      // let oppositeOfCurrentDarkMode = !darkMode
+      // console.log(oppositeOfCurrentDarkMode)
+      // localStorage.setItem('darkMode', oppositeOfCurrentDarkMode)
+      // setDarkMode(oppositeOfCurrentDarkMode)
    }
-   useEffect(() => {
-      let stateDarkMode = localStorage.getItem('darkMode');
-      const detectedDarkMode = stateDarkMode ? JSON.parse(stateDarkMode) : false;
-
-      if (detectedDarkMode !==null) {
-         setDarkMode(detectedDarkMode)
-      } else {
-         localStorage.setItem('darkMode', JSON.stringify(false))
-      }
-   }, [])
    // useEffect(() => {
-   //    let detectedDarkMode = eval(localStorage.getItem('darkMode'));
+   //    let stateDarkMode = localStorage.getItem('darkMode');
+   //    const detectedDarkMode = stateDarkMode ? JSON.parse(stateDarkMode) : false;
 
+   //    if (detectedDarkMode !==null) {
+   //       setDarkMode(detectedDarkMode)
+   //    } else {
+   //       localStorage.setItem('darkMode', JSON.stringify(false))
+   //    }
+   // }, [])
+   // useEffect(() => {
+   //    let detectedDarkMode = localStorage.getItem('darkMode');
+   //    console.log('status', detectedDarkMode);
    //    if (detectedDarkMode) {
    //       setDarkMode(detectedDarkMode)
    //    } else {

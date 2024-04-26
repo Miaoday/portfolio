@@ -19,7 +19,7 @@ of what each of the values mean.
 export const info = {
    firstName: "Miao Day" ,
    lastName: "",
-   initials: "M", // the example uses first and last, but feel free to use three or more if you like.
+   initials: "M",
    position: "a Front-End Developer",
    selfPortrait: self, // don't change this unless you want to name your self-portrait in the "img" folder something else!
    gradient: `-webkit-linear-gradient(135deg, ${colors})`, // don't change this either
@@ -54,11 +54,12 @@ export const info = {
          label: 'linkedin'
       }
    ],
-   bio: "Hello! I'm Miao, a Front-End Developer passionate about generating innovative ideas, creating new solutions and tackling challenges head-on. I thrive on continuous learning and pushing boundaries in technology. I believe my skills and enthusiasm make me a valuable asset to any team. Let's work together to bring our ideas to life and achieve great things!",
+   bio: 
+   "Hello! I'm Miao, a Front-End Developer passionate about generating innovative ideas, creating new solutions and tackling challenges head-on. I thrive on continuous learning and pushing boundaries in technology. I believe my skills and enthusiasm make me a valuable asset to any team. Let's work together to bring our ideas to life and achieve great things!",
    skills:
       {
-         proficientWith: ['javascript', 'react', 'git/github', 'bootstrap', 'html5', 'css3', 'sass', 'mongoDB'],
-         exposedTo: ['nodejs', 'figma', 'adobe_creative']
+         proficientWith: ['javascript', 'react', 'git/github', 'bootstrap', 'html5', 'css3', 'sass', 'mongoDB', 'SEO', 'adobe_creative'],
+         exposedTo: ['nodejs', 'figma']
       },
    hobbies: [
       {
