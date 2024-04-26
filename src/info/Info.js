@@ -11,13 +11,11 @@ I highly recommend using a gradient generator like https://gradientgenerator.pay
 These colors will be used to style your name on the homepage, the background of your picture, and some other accents throughout
 the site.
  */
-
 /*
 So let's get started! Some of the info below is pretty self-explanatory, like 'firstName' and 'bio'. I'll try to explain anything
 that might not be obvious right off the bat :) I recommend looking at the template example live using "npm start" to get an idea
 of what each of the values mean.
  */
-
 export const info = {
    firstName: "Miao Day" ,
    lastName: "",
