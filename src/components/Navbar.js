@@ -38,7 +38,7 @@ export default function Navbar({darkMode, handleClick}) {
             <Box 
             component={'ul'} display={'flex'} 
             justifyContent={'center'} alignItems={'center'}
-            gap={{xs: '2rem', md: '8rem'}}
+            gap={{xs: '1.5rem', md: '8rem'}}
             textTransform={'lowercase'} fontSize={'1rem'}
             >
                {links.map((link, index) => (
