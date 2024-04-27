@@ -31,7 +31,7 @@ const links = [
 
 export default function Navbar({darkMode, handleClick}) {
    const location = useLocation()
-   const [active, setActive] = useState(location.pathname === '/' ? 'home' : location.pathname.slice(1, location.pathname.length));
+   const [active, setActive] = useState(location.pathname === '/' ? 'home' : location.pathname.slice(2, location.pathname.length));
 
    return (
       <Box component={'nav'} width={'100%'}>
@@ -49,7 +49,11 @@ export default function Navbar({darkMode, handleClick}) {
                   sx={{borderImageSource: info.gradient}}
                   >
                      {link.to.startsWith('mailto:') ? (
-                        <a href={link.to} className={Style.link}>
+                        <a 
+                        href={link.to} 
+                        onClick={()=>setActive(link.active)}
+                        className={(link.active === active && !link.type) && Style.active}  
+                        >
                            {!link.type && (
                               <p style={{ padding: '0.5rem 0' }}>
                                  {link.name}
