@@ -7,12 +7,12 @@ import {info} from "../info/Info";
 
 const links = [
    {
-      name: 'Contact Me',
+      name: 'Contact',
       to: 'mailto:starryvero@gmail.com',
       active: 'contact'
    },
    {
-      name: 'About Me',
+      name: 'About',
       to: '/portfolio/about',
       active: 'about'
    },
@@ -35,9 +35,12 @@ export default function Navbar({darkMode, handleClick}) {
 
    return (
       <Box component={'nav'} width={'100%'}>
-            <Box component={'ul'} display={'flex'} justifyContent={'center'} alignItems={'center'}
-               gap={{xs: '2rem', md: '8rem'}}
-               textTransform={'lowercase'} fontSize={'1rem'}>
+            <Box 
+            component={'ul'} display={'flex'} 
+            justifyContent={'center'} alignItems={'center'}
+            gap={{xs: '2rem', md: '8rem'}}
+            textTransform={'lowercase'} fontSize={'1rem'}
+            >
                {links.map((link, index) => (
                   <Box 
                   key={index} 
@@ -46,19 +49,15 @@ export default function Navbar({darkMode, handleClick}) {
                   sx={{borderImageSource: info.gradient}}
                   >
                      {link.to.startsWith('mailto:') ? (
-                        <a href={link.to}
-                           // onClick={()=>setActive(link.active)}
-                           className={Style.link}
-                        >
+                        <a href={link.to} className={Style.link}>
                            {!link.type && (
-                                    <p style={{ padding: '0.5rem 0' }}>
-                                       {link.name}
-                                    </p>
-                              )}
-                              {link.type && <h1>{link.name}</h1>}
+                              <p style={{ padding: '0.5rem 0' }}>
+                                 {link.name}
+                              </p>
+                           )}
+                           {link.type && <h1>{link.name}</h1>}
                         </a>
                      ):(
-
                         <Link to={link.to} onClick={() => setActive(link.active)} className={Style.link}>
                            {!link.type && <p style={{padding: '0.5rem 0'}}>{link.name}</p>}
                            {link.type && <h1>{link.name}</h1>}
