@@ -17,7 +17,6 @@ function EmojiBullet(props) {
          </Box> 
          {text}
       </Box>
-    );
+   );
 }
-
 export default EmojiBullet;

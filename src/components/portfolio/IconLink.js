@@ -8,5 +8,4 @@ function IconLink(props) {
       </a>
    );
 }
-
 export default IconLink;

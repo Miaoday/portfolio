@@ -7,18 +7,17 @@ function PortfolioBlock(props) {
    return (
       <Box display={'flex'} flexDirection={'column'} justifyContent={'center'} alignItems={'center'}>
          <Box component={'img'} src={image} alt={'mockup'}/>
-         <h1 style={{fontSize: '2rem'}}>{title}</h1>
-         <Box className={'portfolio'} display={'flex'} flexDirection={'column'} gap={'0.5rem'}
+         <h1 style={{fontSize: '1.5rem'}}>{title}</h1>
+         <Box className={'portfolio'} display={'flex'} flexDirection={'row'} gap={'0.5rem'}
             alignItems={'center'} fontSize={'1.5rem'} py={'2rem'}>
-            <Box p={1} border={'2px solid black'} borderRadius={'25px'}>
-               <IconLink link={live} title={'Live Demo'} icon={'fa fa-safari'}/>
+            <Box p={1} pl={0} border={'2px solid grey'} borderRadius={'25px'}>
+               <IconLink pl={0} link={live} title={''} icon={'fa fa-safari'}/>
             </Box>
-            <Box p={1} border={'2px solid black'} borderRadius={'25px'}>
-               <IconLink link={source} title={'Source Code'} icon={'fa fa-code'}/>
+            <Box p={1} pl={0} border={'2px solid grey'} borderRadius={'25px'}>
+               <IconLink  link={source} title={''} icon={'fa fa-code'}/>
             </Box>
          </Box>
       </Box>
    );
 }
-
 export default PortfolioBlock;

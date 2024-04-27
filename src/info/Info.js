@@ -17,7 +17,7 @@ that might not be obvious right off the bat :) I recommend looking at the templa
 of what each of the values mean.
  */
 export const info = {
-   firstName: "Miao Day" ,
+   firstName: "Miao" ,
    lastName: "",
    initials: "M",
    position: "a Front-End Developer",
@@ -81,7 +81,7 @@ export const info = {
    ],
    portfolio: [
       {
-         title: "Restaurants Booking",
+         title: "Dining Booking",
          live: "https://miaoday.github.io/p4_ohmyfood/index.html", //this should be a link to the live version of your project, think github pages, netlify, heroku, etc. Or your own domain, if you have it.
          source: "https://github.com/Miaoday/p4_ohmyfood", // this should be a link to the **repository** of the project, where the code is hosted.
          image: mock1
