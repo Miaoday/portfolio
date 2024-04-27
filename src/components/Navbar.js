@@ -52,7 +52,7 @@ export default function Navbar({darkMode, handleClick}) {
                         <a 
                         href={link.to} 
                         onClick={()=>setActive(link.active)}
-                        className={(link.active === active && !link.type) && Style.active}  
+                        className={Style.link.active}  
                         >
                            {!link.type && (
                               <p style={{ padding: '0.5rem 0' }}>
