@@ -87,7 +87,7 @@ export const info = {
          image: mock1
       },
       {
-         title: "Hotels Website",
+         title: "Hotels Booking",
          live: "https://miaoday.github.io/p3_Booki/",
          source: "https://github.com/Miaoday/p3_Booki",
          image: mock2
