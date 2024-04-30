@@ -31,7 +31,7 @@ const links = [
 
 export default function Navbar({darkMode, handleClick}) {
    const location = useLocation()
-   const [active, setActive] = useState(location.pathname === '/' ? 'home' : location.pathname.slice(2, location.pathname.length));
+   const [active, setActive] = useState(location.pathname === '/' ? 'home' : location.pathname);
 
    return (
       <Box component={'nav'} width={'100%'}>
